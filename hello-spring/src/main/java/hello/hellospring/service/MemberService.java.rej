@@ -1,0 +1,20 @@
+diff a/src/main/java/hello/hellospring/service/MemberService.java b/src/main/java/hello/hellospring/service/MemberService.java	(rejected hunks)
+@@ -8,15 +8,15 @@
+ import java.util.Optional;
+ 
+ public class MemberService {
+-    private final MemberRepository  memberRepository; 
++    private final MemberRepository  memberRepository;
+ 
+     public MemberService(MemberRepository memberRepository) {
+         this.memberRepository = memberRepository;
+     }
+ 
+     public Long join(Member member){
+-        validateDuplicateMember(member);z
+-        memberRepository.save(member); 
++        validateDuplicateMember(member);
++        memberRepository.save(member);
+         return member.getId();
+ 
+     }
