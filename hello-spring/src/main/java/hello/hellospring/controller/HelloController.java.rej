@@ -1,9 +1,0 @@
-diff a/hello-spring/src/main/java/hello/hellospring/controller/HelloController.java b/hello-spring/src/main/java/hello/hellospring/controller/HelloController.java	(rejected hunks)
-@@ -10,6 +10,7 @@
- public class HelloController {
-     @GetMapping("hello")
-     public String hello(Model model) {
-+        model.addAttribute("data", "hello!!!");
-         return "hello";
-     }
- 
